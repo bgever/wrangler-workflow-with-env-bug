@@ -6,13 +6,17 @@
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
+		"start:local": "wrangler dev --env local",
+		"start:both": "wrangler dev -c wrangler.jsonc -c ../workflows-starter/wrangler.jsonc",
+		"start:both:local": "wrangler dev -c wrangler.jsonc -c ../workflows-starter/wrangler.jsonc --env local",
 		"test": "vitest",
 		"cf-typegen": "wrangler types"
 	},
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.12.4",
+		"@types/node": "^25.4.0",
 		"typescript": "^5.5.2",
 		"vitest": "~3.2.0",
-		"wrangler": "^3.101.0"
+		"wrangler": "^4.72.0"
 	}
 }
